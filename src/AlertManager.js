@@ -11,7 +11,7 @@ const AlertManager = props => {
       <Stack sx={{ width: '50%' }} spacing={2}>
         {context.alerts && context.alerts.map((alert) => {
           return (
-            <Alert severity={alert.alertType} id={alert.id} key={alert.id}>{alert.alertTitle}</Alert>
+            <Alert severity={alert.alertType} id={alert.alertId} key={alert.alertId}>{alert.alertTitle}</Alert>
           )
         })}
       </Stack>
